@@ -1,0 +1,28 @@
+1) We need to launch two instances one is for Ansible Master and second one for client node
+2) need to install ansible in master server
+3) sudo dnf install ansible -y ## to install ansible ins master server
+4) adhoc commonds
+--------------------------------------
+adhoc commonds works on ssh protocol
+I) ansible -i <inventory.ini> or ip or hostname -e <ansible_username:username> -e <ansible_password:password> <commond> -m ping
+
+ex : ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping ### -m for modules -i for inventory (cmd is used to ping in ansible)
+
+$ansible -i inventory, all -e user_name=user -e user_password=password -m ping
+
+II) ansible -i ipaddress, all -e user_name=ec2-user -e user_password=Devops321 -m dnf -a "name=nginx state=installed"
+
+ansible -i 172.31.16.150, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=installed" -b 
+
+-b is become and user to run as root credentials
+
+Tasks/Modules/Collectiosn everything are same
+
+
+
+
+
+
+
+
+ 
