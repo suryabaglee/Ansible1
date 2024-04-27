@@ -1,6 +1,6 @@
 - name: This is used for Ping Test
-  host: web
+  hosts: web
   tasks: #List of Tasks
-  - name: Ping o the server
-      ansible.builtin.ping
-      
+  - name: Ping the server
+    ansible.builtin.ping
+

@@ -1,0 +1,37 @@
+1  27/04/24 08:10:27 sudo dnf ansible install -y
+    2  27/04/24 08:10:58 sudo dnf install ansible -y
+    3  27/04/24 08:14:28 ansible --version
+    4  27/04/24 08:18:43 ansible -i 172.31.24.121 -e ansible_username:ec2-user -e ansible_password:DevOps321 ping
+    5  27/04/24 08:23:47 ansible -i 172.31.24.121 -e ansible_username:ec2-user -e ansible_password:DevOps321 -m ping
+    6  27/04/24 08:24:10 ansible -i 172.31.24.121, all -e ansible_username:ec2-user -e ansible_password:DevOps321 -m ping
+    7  27/04/24 08:24:27 sudo ansible -i 172.31.24.121, all -e ansible_username:ec2-user -e ansible_password:DevOps321 -m ping
+    8  27/04/24 08:24:54 ping 172.31.24.121
+    9  27/04/24 08:26:33 ansible -i 172.31.24.121 -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping
+   10  27/04/24 08:26:47 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping
+   11  27/04/24 08:29:25 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -c ping
+   12  27/04/24 08:30:37 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps32 -c ping
+   13  27/04/24 08:31:08 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -c ping
+   14  27/04/24 08:31:25 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps32 -m ping
+   15  27/04/24 08:31:39 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping
+   16  27/04/24 08:31:50 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping -vvv
+   17  27/04/24 08:32:07 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping -v
+   18  27/04/24 08:32:20 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping -vv
+   19  27/04/24 08:32:28 ansible -i 172.31.24.121, all -e ansible_username=ec2-user -e ansible_password=DevOps321 -m ping -vvv
+   20  27/04/24 08:57:14 ansible -i 172.31.24.121, all -e user_name=ec2-user -e user_password=Devops321 -m dnf -a "name=nginx state=installed"
+   21  27/04/24 08:58:02 ping 172.31.24.121
+   22  27/04/24 09:01:21 ansible -i 172.31.24.121, all -e ansible_user=ec2-user -e ansible_password=Devops321 -m dnf -a "name=nginx state=instaled"
+   23  27/04/24 09:02:17 ansible -i 172.31.24.121, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=instaled"
+   24  27/04/24 09:03:20 ansible -i 172.31.24.121, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=installed"
+   25  27/04/24 09:05:26 ansible -i 172.31.24.121, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=installed" -b
+   26  27/04/24 09:09:56 ansible -i 172.31.24.121, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m service -a "name=nginx state=started" -b -vvv
+   27  27/04/24 10:32:47 git clone https://github.com/suryabaglee/Ansible1.git
+   28  27/04/24 10:32:54 git pull
+   29  27/04/24 10:33:01 ls -l
+   30  27/04/24 10:34:12 cd Ansible1/
+   31  27/04/24 10:34:14 ls -l
+   32  27/04/24 10:34:28 cad Ansible1/
+   33  27/04/24 10:34:30 ls -l
+   34  27/04/24 10:35:03 cd Ansible1/
+   35  27/04/24 10:35:06 ls -l
+   36  27/04/24 10:59:45 ansible -i inventory.ini web --list-hosts
+   37  27/04/24 10:59:54 ansible -i inventory.ini all --list-hosts
