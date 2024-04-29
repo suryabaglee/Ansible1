@@ -1,5 +1,6 @@
 - name: This is used for Ping Test
   hosts: web
+  become: yes # It is same as -b in adhoc commands for root user access
   tasks: #List of Tasks
   - name: Install a list of packages (suitable replacement for 2.11 loop deprecation warning)
     ansible.builtin.dnf:
