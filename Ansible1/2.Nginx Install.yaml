@@ -1,0 +1,13 @@
+- name: This is used for Ping Test
+  hosts: web
+  tasks: #List of Tasks
+- name: Install a list of packages (suitable replacement for 2.11 loop deprecation warning)
+  ansible.builtin.yum:
+    name: nginx
+    state: present
+- name: Start Nginx
+  ansible.builtin.serice:
+    name: nginx
+    state: started
+    enable: yes
+

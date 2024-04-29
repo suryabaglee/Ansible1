@@ -18,6 +18,18 @@ ansible -i 172.31.16.150, all -e ansible_user=ec2-user -e ansible_password=DevOp
 
 Tasks/Modules/Collectiosn everything are same
 
+5) YAML : Yet another markup language
+-------------------------------------------------
+
+in this we have to create a YAML file for playbook to deploy cmd in playbook files
+
+$ansible -i inventory.ini web --list-hosts
+
+$ansible -i inventory.ini all --list-hosts
+
+
+
+
 
 
 
