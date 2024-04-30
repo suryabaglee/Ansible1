@@ -5,5 +5,6 @@
     trainer: "Surya"
     hours: "120hrs"
   tasks:
+  - name: Variables print
     ansible.builtin.debug:
       msg: "I am Studing {{course}} by the {{trainer}} for {{hours}}" 
