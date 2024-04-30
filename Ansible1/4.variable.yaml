@@ -6,4 +6,4 @@
     hours: 120
   tasks:
     ansible.builtin.debug:
-      msg: "I am Studing {{ course }} by the {{ trainer }} for {{ hours }}" 
+      msg: "I am Studing {{course}} by the {{trainer}} for {{hours}}" 
