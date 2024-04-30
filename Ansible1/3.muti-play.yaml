@@ -3,11 +3,9 @@
   tasks:
   - name: play 1
     ansible.builtin.debug:
-      name: play 1 and task 1
       msg: "Hi i am from play 1 and Task 1"
   - name: play 2
     ansible.builtin.debug:
-      name: play 2 and task 1
       msg: "Hi this id from play 2 and Task 1"
     
   
