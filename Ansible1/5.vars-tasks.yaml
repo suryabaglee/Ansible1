@@ -6,11 +6,11 @@
     Trainer: "Surya"
     Duration: "120Hrs"
   tasks:
-    - name: level
-      vars:
-        Trainer: "SuryaChandra"
-        ansible.builtin.debug:
-          msg: "Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}"
-    - name: without level
-      ansible.builtin.debug:
-        msg: "Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}"
+  - name: level
+    vars:
+      Trainer: "SuryaChandra"
+    ansible.builtin.debug:
+      msg: "Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}"
+  - name: without level
+    ansible.builtin.debug:
+      msg: "Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}"
