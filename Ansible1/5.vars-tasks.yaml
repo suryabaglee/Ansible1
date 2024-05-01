@@ -2,15 +2,15 @@
 - name: vars overs tasks
   hosts: localhost
   vars:
-    Course: AWS
-    Trainer: Surya
-    Duration: 120Hrs
+    Course: "AWS"
+    Trainer: "Surya"
+    Duration: "120Hrs"
   tasks:
     - name: level
       vars:
-        Trainer: Surya
+        Trainer: "SuryaChandra"
         ansible.builtin.debug:
-          msg: Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}
+          msg: "Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}"
     - name: without level
       ansible.builtin.debug:
-        msg: Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}
+        msg: "Hi this course name is {{Course}} and the trainer is {{Trainer}} and the training hours details are {{Duration}}"
