@@ -2,6 +2,8 @@
   hosts: localhost
   tasks:
   - name: print information
+    vars_file:
+    - vars.yaml
     vars:
       timings: "07:15AM IST"
     ansible.builtin.debug:
